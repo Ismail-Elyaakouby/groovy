@@ -1,4 +1,4 @@
-def BRANCH_NAMES = sh (script: 'curl -s https://raw.githubusercontent.com/Ismail-Elyaakouby/groovy/main/aghouchaf.txt')
+def BRANCH_NAMES = sh(script: "curl -s https://raw.githubusercontent.com/Ismail-Elyaakouby/groovy/main/aghouchaf.txt", returnStdout: true).trim()
 pipeline {
 
     agent any
@@ -19,3 +19,4 @@ pipeline {
         }
     }
 }
+
