@@ -14,7 +14,7 @@ pipeline {
 
                         parameters: [
                                                      
-                            string(name: 'aghouchaf1', value: : "$response" ),
+                            string(name: 'aghouchaf1', value: "$response" ),
                             string(name: 'aghouchaf2', value: 'prefix-' + String.valueOf(BUILD_NUMBER))
                         ]  
                 }
