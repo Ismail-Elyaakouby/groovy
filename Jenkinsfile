@@ -14,7 +14,7 @@ pipeline {
 
                         parameters: [
                                                      
-                            choice(name: 'aghouchaf1', value: "$response"),
+                            choice(name: "aghouchaf1", choices: "$response" ),
                             string(name: 'aghouchaf2', value: 'prefix-' + String.valueOf(BUILD_NUMBER))
                         ]  
                 }
