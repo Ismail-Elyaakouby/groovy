@@ -10,7 +10,7 @@ pipeline {
 
                     echo response
                     
-                    build job: 'aghouchaf',
+                    build job: 'aghouchaf1',
 
                         parameters: [
                                                      
