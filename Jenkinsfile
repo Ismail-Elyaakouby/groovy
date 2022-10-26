@@ -12,9 +12,8 @@ pipeline {
                     
                     build job: 'aghouchaf', 
                         parameters: [
-                           
-                            string(defaultValue: 'aghouchaf1', name: String.valueOf($response), trim: true),
-                            
+                                                     
+                            string(name: 'aghouchaf1', value: $response)
                             string(name: 'aghouchaf2', value: 'prefix-' + String.valueOf(BUILD_NUMBER))
                         ]  
                 }
